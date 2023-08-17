@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Advantages } from "./components/advantages";
+import { CryproCurrenceis } from "./components/cryptocurrenceis";
+import { DownloadSection } from "./components/download";
+import { Footer } from "./components/footer";
+import { GraphSection } from "./components/graph-section";
+import { Header } from "./components/header";
+import HowItWorks from "./components/howitworks";
+import { MainSection } from "./components/main-section/main-section";
+import { Wrapper } from "./components/wrapper";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Header />
+      <MainSection />
+      <Advantages />
+      <HowItWorks />
+      <CryproCurrenceis />
+      <GraphSection />
+      <DownloadSection />
+      <Footer />
+    </Wrapper>
   );
 }
 
